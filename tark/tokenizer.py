@@ -1,4 +1,4 @@
-from structures import Token
+from .structures import Token
 
 class Tokenizer:
     def __init__(self):

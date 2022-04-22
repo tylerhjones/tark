@@ -1,4 +1,3 @@
-import sys
 
 class Token:
     def __init__(self, type: str, value: str, line=0, row=0):

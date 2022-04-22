@@ -1,5 +1,5 @@
-from structures import Stack
-from states import Title, Tick
+from .structures import Stack
+from .states import Title, Tick
 class Parser:
     '''
     BNF

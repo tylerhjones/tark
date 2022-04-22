@@ -1,6 +1,6 @@
 import sys
-from tokenizer import Tokenizer
-from parser import Parser
+from .tokenizer import Tokenizer
+from .parser import Parser
 
 def process_file(file_path):
     tokens = None
