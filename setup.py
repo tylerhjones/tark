@@ -5,7 +5,7 @@ with open("README.md", "r") as readme_file:
 
 setup(
     name="tark",
-    version="0.0.1",
+    version="0.0.2",
     author="tyler jones",
     description="Markdown parser focused on blogs.",
     long_description=readme,
