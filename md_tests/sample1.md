@@ -1,13 +1,15 @@
-# hello tark
+# Hello, welcome to my garden.
 
-I am a test.
+I would like to take you on a journey of `knowledge`.
 
 ```java
 public class Test {
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        System.out.println("Lets learn things!");
     }
 }
 ```
 
-Cool `beans` yo.
+<div>inline html</div>
+
+Here is a [link](https://codegarden.wtf).

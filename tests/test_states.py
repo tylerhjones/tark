@@ -1,4 +1,3 @@
-from .context import tark
 import unittest
 
 from tark.structures import Stack, Token

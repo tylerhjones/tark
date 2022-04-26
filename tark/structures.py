@@ -77,7 +77,7 @@ class Stack:
             return buf[0]
         return buf
     
-    def seek_until(self, func)-> list[Token]:
+    def seek_until(self, func, include_last=True, error_on_empty=True)-> list[Token]:
         '''
         From the HEAD of stack, pop until provided lambda(token) is true.
         Return the popped tokens.
@@ -85,8 +85,13 @@ class Stack:
         buffer = []
         while True:
             if self.is_empty(): # exit condition 1
-                raise Exception('Stack empty before seek_until found match.')
+                if error_on_empty:
+                    raise Exception('Stack empty before seek_until found match.')
+                else:
+                    return buffer
             token = self.pop()
             buffer.append(token)
             if func(token): # exit condition 2
+                if not include_last:
+                    self.push(buffer.pop()) # put back the last token
                 return buffer
